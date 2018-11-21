@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animate 메서드</title>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        /* alert(); */
+        $('#div1').animate({top:200, left:400}).animate({top:0, left:0});
+      });
+    </script>
+    <style>
+      #div1 {background:pink; position:absolute; top:0; left:0; padding:50px;}
+    </style>
+</head>
+<body>
+  <div id="div1">box</div>
+</body>
+</html>
