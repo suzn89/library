@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text / html 메서드</title>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        $('#div1').text('text메소드로 컨텐츠 치환');//컨텐츠를 치환  ''없으면 안에 내용이뭐야?이고 ('')이거는 바꾸는거
+        $('#div2').html('html메소드로 컨텐츠 치환');
+        $('#div3').text('<strong>text메소드</strong>로 컨텐츠 치환'); //text메소드는 텍스트로인식하고
+        $('#div4').html('<strong>html메소드</strong>로 컨텐츠 치환'); //html메소드는 태그인식함
+        //블럭씌우고 ctrl + shift + a
+      });
+    </script>
+    <style>
+        div{border:3px solid #000000; padding:10px;}          
+    </style>
+</head>
+<body>
+	<div id="div1">안에 들어있는 컨텐츠</div>
+	<div id="div2">안에 들어있는 컨텐츠</div>
+	<div id="div3">안에 들어있는 컨텐츠</div>
+	<div id="div4">안에 들어있는 컨텐츠</div>
+</body>
+</html>
