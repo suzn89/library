@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>동적생성</title>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            var div1 = $('#div1');
+            $('<img src="images/img1.gif" alt=""/>').appendTo(div1);		// 동적생성,, 제이쿼리객체안에 태그입력
+        });
+    </script>
+
+</head>
+<body>
+	<div id="div1"></div>
+</body>
+
+
+</html>

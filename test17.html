@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text 메서드 (치환)</title>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            $('#div1').click(function(){    		//이벤트 메서드, 사용자가 어떤 행동(이벤트)를하면 기능(펑션)을 함
+                $('#div1').text('클릭했습니다!');
+            });		
+        });
+    </script>
+    <style>
+        #div1 {background:pink; padding:20px;}
+    </style>
+
+</head>
+<body>
+	<div id="div1">div!!!!!!!!!!!!!!!!!!!</div>
+</body>
+
+</html>

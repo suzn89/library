@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>this</title>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            var guideClass = 'guide';
+            $('.guideText').each(function(){
+                var guideText = this.defaultValue; 	//이름을 입력해주세요
+                var element = $(this);
+                element.focus(function(){
+                    if(element.val()===guideText){
+                        element.val('');
+                        element.removeClass(guideClass);
+                    };
+                }).blur(function(){
+                    if(element.val()===''){
+                        element.val(guideText);
+                        element.addClass(guideClass);
+                    };
+                });  // 입력한거 없을때 살려내야지  (위에꺼 기준 blur 되었을때)
+                if(element.val()===guideText) {
+                    element.addClass(guideClass);	//처음에 로드되고 아무것도 안한상태
+                }
+            });
+        });
+    </script>
+    <style>
+        .guide {color:#cccccc;}
+        textarea {display:block; width:300px; margin: 5px 0 5px;}     
+    </style>
+</head>
+<body>
+	<form method="get">
+		<input type="text" class="guideText" id="input1" size="40" value="텍스트필드입니다." />
+		<textarea name="textarea1"  class="guideText" id="textarea1" cols="20" rows="3">텍스트에어리어 영역입니다.</textarea>
+		
+		<select name="select1" id="select1">
+			<option value="city1">서울</option>
+			<option value="city2">대전</option>
+			<option value="city3">부산</option>
+		</select>
+		<select name="select2" id="select2" multiple="multiple">
+			<option value="town1">동구</option>
+			<option value="town2">서구</option>
+			<option value="town3">남구</option>
+			<option value="town4">북구</option>
+		</select>
+	</form>
+</body>
+</html>

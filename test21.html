@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>click 메서드</title>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            $('.clickTest').click(function(){
+                $(this).text('클릭되었습니다.');				//this .clickTest중에서 .click 한놈만
+            });
+        });
+    </script>
+    <style>
+        .clickTest {background:yellow; padding:20px; margin:0 0 5px}
+    </style>
+
+</head>
+<body>
+	<div class="clickTest">div!</div>
+	<div class="clickTest">div!</div>
+	<div class="clickTest">div!</div>
+	<div class="clickTest">div!!</div>
+	<div class="clickTest">div!</div>
+</body>
+
+</html>

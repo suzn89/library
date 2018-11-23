@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>attr 메서드</title>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            $('#changeThis').attr('src','images/img2.gif');		//src 속성을가진 부분을 이걸로바꿔라~
+        });
+    </script>
+    <style>
+        div{border:3px solid #000000; padding:10px;}        
+    </style>
+</head>
+<body>
+	<img src="images/img1.gif" alt=""/>
+	<img src="images/img1.gif" alt=""/>
+	<img src="images/img1.gif" alt="" id="changeThis"/>
+	<img src="images/img1.gif" alt=""/>
+</body>
+
+</html>
